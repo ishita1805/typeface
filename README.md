@@ -39,7 +39,7 @@ const optionalData = [
 
 ```
 import React,{ useState} from 'react'
-import Typeface from 'typeface'
+import Typeface from 'typeface-editor'
 
 function App() {
 

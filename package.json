@@ -1,12 +1,23 @@
 {
-  "name": "typeface",
+  "name": "typeface-editor",
   "version": "1.0.0",
   "description": "",
   "main": "./build/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ishita1805/typeface.git"
+},
   "scripts": {
     "build": "webpack"
   },
-  "keywords": [],
+  "keywords": [
+    "rich text editor",
+    "editor",
+    "wysiwyg",
+    "npm",
+    "packages",
+    "rich-text-editor"
+  ],
   "author": "Ishita Kabra",
   "license": "ISC",
   "devDependencies": {
