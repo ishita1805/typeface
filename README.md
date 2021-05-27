@@ -11,9 +11,9 @@ Typeface is a fast, lightweight  and easy to use rich text editor package for re
 
 ## Installation
 
-install using npm 
+Install using npm 
 ```
-npm install --save typespace
+npm install --save typeface-editor
 ```
 
 
@@ -38,7 +38,7 @@ const optionalData = [
 ## Usage
 
 ```
-import React,{ useState} from 'react'
+import React,{ useState } from 'react'
 import Typeface from 'typeface-editor'
 
 function App() {
