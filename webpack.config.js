@@ -1,4 +1,5 @@
-var path = require('path')
+var path = require('path');
+
 module.exports = {
     mode: "production",
     entry: "./src/index.js",
@@ -19,5 +20,4 @@ module.exports = {
     externals: {
         react: "react"
     }
-
-}
+};

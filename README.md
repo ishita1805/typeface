@@ -3,6 +3,8 @@
 <!-- [![Build Status]()]() -->
 
 Typeface is a fast, lightweight  and easy to use rich text editor package for react.js
+You can checkout a live demo [here](https://typeface.atishi.me/)
+
 ## Features
 - Add responsive images and videos
 - Change font colour
