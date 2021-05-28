@@ -1,5 +1,5 @@
 # Typeface
-![image info](https://raw.githubusercontent.com/ishita1805/rich-text-editor/image-branch/src/assets/logo_small.png)
+![image info](https://typeface.atishi.me/static/media/logo_small.649c3852.png)
 <!-- [![Build Status]()]() -->
 
 Typeface is a fast, lightweight  and easy to use rich text editor package for react.js
