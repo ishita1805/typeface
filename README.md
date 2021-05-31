@@ -1,7 +1,7 @@
 # Typeface
 ![image info](https://typeface.atishi.me/static/media/logo_small.649c3852.png)
 
-[![Build Status](https://www.npmjs.com/package/typeface-editor)](https://img.shields.io/npm/dw/typeface-editor)
+[![Build Status](https://img.shields.io/npm/dw/typeface-editor)](https://www.npmjs.com/package/typeface-editor)
 
 Typeface is a fast, lightweight  and easy to use rich text editor package for react.js
 You can checkout a live demo [here](https://typeface.atishi.me/)
