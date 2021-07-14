@@ -1,7 +1,7 @@
 {
   "name": "typeface-editor",
-  "version": "1.0.4",
-  "description": "",
+  "version": "1.0.5",
+  "description": "A rich text editor package for react",
   "main": "./build/index.js",
   "repository": {
     "type": "git",

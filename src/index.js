@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import './editor.css'
 
-const Typeface = ({ label,description,options,theme,...props }) => {
+const Editor = ({ label,value,description,options,theme,...props }) => {
     const [align, setAlign] = useState("justifyLeft");
     const [active, setActive] = useState(false);
     const [italic, setItalic] = useState(false);
@@ -18,6 +18,7 @@ const Typeface = ({ label,description,options,theme,...props }) => {
     const [font, setFont] = useState("p");
     const [fontLabel, setFontLabel] = useState('Paragraph');
     const [code,setCode] = useState(false);
+    // eslint-disable-next-line no-unused-vars
     const inputEl = useRef(null);
     const editor = useRef(null);
     const inputE2 = useRef(null);
@@ -26,7 +27,9 @@ const Typeface = ({ label,description,options,theme,...props }) => {
     useEffect(() => {
         onFocus();
         document.execCommand('formatBlock', false, 'p');
+        if(value) editor.current.innerHTML=`${value}`;
     }, [])
+
 
     //  function to get container in focus
     const onFocus = () => {
@@ -289,17 +292,17 @@ const Typeface = ({ label,description,options,theme,...props }) => {
                 <button><span onClick={handleUploadImg} className="material-icons rte-icon">image</span></button>
                 <input type="file" id="file" ref={inputE2} accept="image/*" onChange={(e) => { imgHandler(e) }} style={{ display: "none" }} />
                 
-                {options.includes("video")?
+                {options && options.includes("video")?
                 <>
                 <button><span onClick={vidHandler} className="material-icons rte-icon">ondemand_video</span></button>
                 {/* <input type="file" id="file" ref={inputEl} accept="video/*" onChange={(e) => {vidHandler(e)}} style={{ display: "none" }} /> */}
                 </>
                 :null}
                 
-                {options.includes("blockquote") ?
+                {options && options.includes("blockquote") ?
                     <button><span data-cmd="<blockquote>" onClick={blockHandler} className={block ?  "material-icons rte-icon-active" : "material-icons rte-icon"}>format_quote</span></button>
                     : null}
-                {options.includes("code") ?
+                {options && options.includes("code") ?
                     <button><span data-cmd="<pre>" onClick={preHandler} className={preblock ?  "material-icons rte-icon-active" : "material-icons rte-icon"}>code</span></button>
                     : null}
 
@@ -333,10 +336,10 @@ const Typeface = ({ label,description,options,theme,...props }) => {
             </div>
 
             <div
-                contenteditable="true"
+                contentEditable="true"
                 id="myTextField" 
                 ref={editor}
-                tabindex="1"
+                tabIndex="1"
                 className='rte-editor-container'
                 onClick={selectHandler}
                 onKeyUp={(e) => test(e)}
@@ -351,4 +354,4 @@ const Typeface = ({ label,description,options,theme,...props }) => {
 
 
 
-export default Typeface
+export default Editor
